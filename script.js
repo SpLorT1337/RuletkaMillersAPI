@@ -102,7 +102,7 @@ function buildCarousel() {
 function playRandomRouletteVideo() {
   const video = document.getElementById("rouletteVideo");
   const videoSource = document.getElementById("videoSource");
-  const videos = ["joker1.mp4", "joker2.mp4"];
+  const videos = ["millerscashe.mp4"];
   const randomIndex = Math.floor(Math.random() * videos.length);
   videoSource.src = videos[randomIndex];
   video.load();
