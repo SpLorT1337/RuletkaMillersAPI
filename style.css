@@ -1,0 +1,411 @@
+body {
+    background-color: #19191a;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    color: #fff;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0 0 0;
+    background: #0f0f0f;
+}
+h1 {
+    font-size: 2em;
+    margin: 16px 0;
+}
+main {
+    max-width: 1400px;
+    margin: 35px auto 0 auto;
+    padding: 0 0 24px 0;
+}
+/* Верхний расширенный блок */
+.top-blocks-wrapper {
+    margin-bottom: 24px;
+    max-width: 1350px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-blocks.dark-block {
+    background: #232328;
+    padding: 40px 70px 40px 40px;
+    min-height: 220px;
+    border-radius: 19px;
+    font-size: 1.26em;
+    line-height: 1.6;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #e0e0e0;
+    gap: 32px;
+}
+/* Центральная структура: левый текст + центр. картинка + правый ввод */
+.welcome-block {
+    flex: 2 1 0;
+    display: flex;
+    align-items: center;
+    min-height: 160px;
+    padding: 0px 0px 0px 0;
+    gap: 48px;
+}
+.welcome-text {
+    max-width: 320px;
+    margin-left: 24px;
+    margin-right: 8px;
+}
+.welcome-text p {
+    color: #fff;
+    font-size: 1.18em;
+    line-height: 1.75;
+    letter-spacing: 0.03em;
+    word-break: break-word;
+    margin: 0;
+    text-align: left;
+    text-shadow: 0 2px 6px #000b, 0 1px 2px #232328aa;
+}
+.case-image-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+}
+.case-millers-img {
+    width: 400px !important;
+    max-width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+/* Блок добавления справа */
+.add-block {
+    flex: 0 0 350px;
+    background: #232328;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 32px 30px 32px 32px;
+    min-height: 148px;
+    margin-left: 24px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.add-block input {
+    width: 350px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.16em;
+    outline: none;
+    background: #19191a;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 3px 16px #000c;
+    border: 2px solid #27282d;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+.add-block input:focus {
+    border: 2px solid #ff2b70;
+    box-shadow: 0 3px 15px #ff2b7040;
+}
+.add-btn-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.add-btn-row button {
+    width: 170px;
+    padding: 12px 0;
+    font-size: 1.08em;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #ff56d0, #ff2b70 70%);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 13px #ff2b7060;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.13s;
+}
+.add-btn-row button:hover {
+    background: linear-gradient(90deg, #ff2b70, #fa71cf 90%);
+    transform: scale(1.08);
+}
+/* Нижний расширенный блок */
+.bottom-block-wrapper {
+    margin-bottom: 24px;
+    max-width: 1350px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.light-block {
+    background: #2e2f34;
+    border-radius: 19px;
+    padding: 24px 22px 18px 22px;
+    box-sizing: border-box;
+    color: #ffffffcc;
+    margin-bottom: 24px;
+}
+.roulette-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    gap: 30px;
+}
+.big-roulette-btn {
+    width: 250px !important;
+    height: 50px !important;
+    font-size: 0.93em !important;
+    font-weight: bold;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #ff2b70 25%, #ff5ee0 100%);
+    color: #fff;
+    border: none;
+    box-shadow: 0 5px 18px #ff2b7045;
+    transition: background 0.2s, transform 0.15s;
+    cursor: pointer;
+    letter-spacing: 1.25px;
+}
+.big-roulette-btn:hover {
+    background: linear-gradient(90deg, #e32567 25%, #e579ef 100%);
+    transform: scale(1.05);
+    box-shadow: 0 8px 26px #ff2b7085;
+}
+/* Список участников */
+.participants-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 18px;
+}
+.participant {
+    background: #1d1d20;
+    padding: 22px 32px;
+    border-radius: 13px;
+    font-size: 1.08em;
+    min-width: 142px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 12px #18181d5a;
+    transition: box-shadow 0.2s;
+}
+.participant:hover {
+    box-shadow: 0 2px 20px #ff2b7058;
+}
+.participant:hover .delete-cross {
+    display: block;
+}
+.delete-cross {
+    display: none;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 6px;
+    right: 10px;
+    cursor: pointer;
+    background-image: url('red_cross.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
+/* Цвета редкости участников */
+.rare-strip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 7px;
+    border-radius: 13px 13px 0 0;
+}
+.rare-turquoise {
+    background: linear-gradient(90deg, #40fff2, #07bfdc);
+}
+.rare-gold {
+    background: linear-gradient(90deg, #ffe063, #f1bf0e);
+}
+.rare-red {
+    background: linear-gradient(90deg, #ff405d, #ff341f);
+}
+.rare-blue {
+    background: linear-gradient(90deg, #067bfb, #1e3bc2);
+}
+.rare-grey {
+    background: linear-gradient(90deg, #b2b6b7, #606669);
+}
+/* Цвета полосок карусели */
+.carousel-rare-strip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    border-radius: 20px 20px 0 0;
+	gap: 5px;
+}
+.carousel-rare-turquoise {
+    background: linear-gradient(90deg, #40fff2, #07bfdc);
+}
+.carousel-rare-gold {
+    background: linear-gradient(90deg, #ffe063, #f1bf0e);
+}
+.carousel-rare-red {
+    background: linear-gradient(90deg, #ff405d, #ff341f);
+}
+.carousel-rare-blue {
+    background: linear-gradient(90deg, #067bfb, #1e3bc2);
+}
+.carousel-rare-grey {
+    background: linear-gradient(90deg, #b2b6b7, #606669);
+}
+.roulette-section {
+    background: #232328;
+    border-radius: 18px;
+    padding: 44px 38px;
+    margin: 0 auto;
+    max-width: 1000px;
+    min-width: 650px;
+    min-height: 185px;
+    box-sizing: border-box;
+    position: relative;
+}
+.roulette-wrapper {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.carousel {
+    display: flex;
+    gap: 32px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    min-height: 90px;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.carousel-item {
+    background: #27282d;
+    border-radius: 20px;
+    padding: 28px 50px;
+    min-width: 170px;
+    font-size: 1.25em;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 12px #19191a52;
+    transition: transform 0.3s, background 0.3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.roulette-indicator {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 120px;
+    width: 6px;
+    background: linear-gradient(to bottom, #ff2b70 40%, #fff 100%);
+    border-radius: 4px;
+    z-index: 5;
+    box-shadow: 0 0 18px #ff2b70b2;
+    pointer-events: none;
+}
+/* Модальное затемнение фона */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Окно победителя */
+.winner {
+    background: linear-gradient(145deg, #ff2b70, #ff56d0);
+    padding: 40px 30px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(255, 43, 112, 0.8);
+    color: white;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 700;
+    width: 320px;
+    user-select: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1000;
+}
+/* Имя победителя */
+.winnerName {
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+/* Общие стили кнопок */
+#removeWinnerBtn,
+.close-winner-btn {
+    padding: 12px 30px;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px #ff2b7040;
+    transition: background 0.3s, color 0.3s, transform 0.15s;
+    font-size: 1em;
+}
+/* Кнопка убрать победителя */
+#removeWinnerBtn {
+    background: white;
+    color: #ff2b70;
+}
+#removeWinnerBtn:hover {
+    background: #ff2b70;
+    color: white;
+    transform: scale(1.05);
+}
+/* Кнопка закрыть */
+.close-winner-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.close-winner-btn:hover {
+    background: white;
+    color: #ff2b70;
+    transform: scale(1.05);
+}
+
+#rouletteVideo {
+  filter: url(#chromaKeyFilter) brightness(1.2) contrast(1.1);;
+}

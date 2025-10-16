@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILLER'S FAMILY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>MILLER'S FAMILY</h1>
+</header>
+<main>
+    <div class="top-blocks-wrapper">
+        <div class="top-blocks dark-block">
+            <div class="welcome-block">
+                <div class="welcome-text">
+                    <p>
+                        Привет всем миллерам.<br>
+                        Сегодня тот самый знаменательный день (воскресенье)<br>
+                        В честь такого события попытаем удачу.<br>
+                        Давайте же узнаем, кому сегодня повезёт!
+                    </p>
+                </div>
+                <div class="case-image-center">
+                    <img src="case_millers.png" alt="case millers" class="case-millers-img">
+                </div>
+            </div>
+            <div class="add-block">
+                <input type="text" id="participantName" placeholder="Введите имя участника">
+                <div class="add-btn-row">
+                    <button id="addParticipant">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-block-wrapper">
+        <section class="case-content light-block">
+            <div class="roulette-btn-wrapper">
+                <button id="openCase" class="big-roulette-btn">Старт</button>
+                <button id="donDigidon" class="big-roulette-btn">Дон Дигидон</button>
+                <button id="loadBackgroundBtn" class="big-roulette-btn">Загрузить фон</button>
+            </div>
+            <div class="participants-list" id="participantsList"></div>
+        </section>
+    </div>
+
+    <section id="rouletteSection" class="roulette-section" style="display: none;">
+        <div class="roulette-wrapper">
+            <div id="carousel" class="carousel"></div>
+            <div class="roulette-indicator"></div>
+        </div>
+    </section>
+	
+	<!-- Видео с хромакеем, под рулеткой -->
+	<video id="rouletteVideo" autoplay muted loop
+		style="
+		position: absolute;
+		bottom: 200px; /* поднимаем на 60 пикселей выше низа родителя */
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		max-width: 600px;
+		height: auto;
+		z-index: 5;
+		pointer-events: none;
+		background: transparent;
+		border-radius: 32px;
+		display: none;">
+		<source id="videoSource" src="millerscashe.mp4" type="video/mp4" />
+	</video>
+
+</main>
+
+<div class="modal-overlay" id="modalOverlay" style="display: none;">
+    <div class="winner" id="winnerSection">
+        <div class="winnerName" id="winnerName"></div>
+        <button id="removeWinnerBtn">Убрать победителя</button>
+        <button class="close-winner-btn" id="closeWinnerBtn">Закрыть</button>
+    </div>
+</div>
+  
+<!--<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <filter id="chromaKeyFilter" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="
+        1 0 0 0 -0.902
+		0 1 0 0 -0.918
+		0 0 1 0 -0.913
+		0 0 0 1 0"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0 1"/>
+      </feComponentTransfer>
+    </filter>
+</svg> -->
+  
+<script src="script.js"></script>
+</body>
+</html>
