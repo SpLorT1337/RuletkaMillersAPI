@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Majestic X';
+	src: url('../fonts/majestic_x.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/majestic_x.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/majestic_x.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/majestic_x.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/majestic_x.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/majestic_x.svg#majestic_x') format('svg'); /* Chrome < 4, Legacy iOS */
+}
